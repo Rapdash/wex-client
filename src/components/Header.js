@@ -16,7 +16,7 @@ export const Header = () => {
         </div>
         <div className="block lg:hidden">
           <button
-            className="flex items-center px-3 py-2 border rounded text-orange-300 hover:text-white hover:border-white"
+            className="flex items-center px-3 py-2 border rounded text-white hover:border-white"
             onClick={() => setExpanded(!expanded)}
           >
             <svg
@@ -36,14 +36,19 @@ export const Header = () => {
           }`}
         >
           <div className="text-sm lg:flex-grow">
-            <Link to="/blog">
-              <button className="block mt-4 lg:inline-block lg:mt-0 text-blue-200 text-base font-display hover:text-white mr-4">
+            <Link to="/listings">
+              <button className={`block mt-4 lg:inline-block lg:mt-0 text-blue-200 text-base font-display hover:text-white mr-4`}>
                 Listings
               </button>
             </Link>
-            <Link to="/portfolio" passHref>
+            <Link to="/recieved-offers">
               <button className="block mt-4 lg:inline-block lg:mt-0 text-blue-200 text-base font-display hover:text-white mr-4">
-                Portfolio
+                Recieved Offers
+              </button>
+            </Link>
+            <Link to="/sent-offers">
+              <button className="block mt-4 lg:inline-block lg:mt-0 text-blue-200 text-base font-display hover:text-white mr-4">
+                Sent Offers
               </button>
             </Link>
             {/* <Link href="/hire-me" passHref>
