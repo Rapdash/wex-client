@@ -11,7 +11,7 @@ export const Header = () => {
             Water Exchange
           </h1>
           <h4 className="text-sm font-display leading-normal">
-           By The Water Agency, Inc.
+            By The Water Agency, Inc.
           </h4>
         </div>
         <div className="block lg:hidden">
@@ -37,7 +37,9 @@ export const Header = () => {
         >
           <div className="text-sm lg:flex-grow">
             <Link to="/listings">
-              <span className={`block mt-4 lg:inline-block lg:mt-0 text-blue-200 text-base font-display hover:text-white mr-4`}>
+              <span
+                className={`block mt-4 lg:inline-block lg:mt-0 text-blue-200 text-base font-display hover:text-white mr-4`}
+              >
                 Listings
               </span>
             </Link>
