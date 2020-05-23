@@ -37,32 +37,20 @@ export const Header = () => {
         >
           <div className="text-sm lg:flex-grow">
             <Link to="/listings">
-              <button className={`block mt-4 lg:inline-block lg:mt-0 text-blue-200 text-base font-display hover:text-white mr-4`}>
+              <span className={`block mt-4 lg:inline-block lg:mt-0 text-blue-200 text-base font-display hover:text-white mr-4`}>
                 Listings
-              </button>
+              </span>
             </Link>
             <Link to="/recieved-offers">
-              <button className="block mt-4 lg:inline-block lg:mt-0 text-blue-200 text-base font-display hover:text-white mr-4">
+              <span className="block mt-4 lg:inline-block lg:mt-0 text-blue-200 text-base font-display hover:text-white mr-4">
                 Recieved Offers
-              </button>
+              </span>
             </Link>
             <Link to="/sent-offers">
-              <button className="block mt-4 lg:inline-block lg:mt-0 text-blue-200 text-base font-display hover:text-white mr-4">
+              <span className="block mt-4 lg:inline-block lg:mt-0 text-blue-200 text-base font-display hover:text-white mr-4">
                 Sent Offers
-              </button>
+              </span>
             </Link>
-            {/* <Link href="/hire-me" passHref>
-              <a className="block mt-4 lg:inline-block lg:mt-0 text-orange-200 text-base font-display hover:text-white">
-                Hire Fritz
-              </a>
-            </Link> */}
-          </div>
-          <div>
-            {/* <Link href="/mailing-list" passHref>
-              <a className="inline-block text-sm px-4 py-4 leading-none border rounded text-white border-white hover:border-transparent hover:text-orange-600 hover:bg-white mt-4 lg:mt-0">
-                Join My Mailing List!
-              </a>
-            </Link> */}
           </div>
         </div>
       </nav>
