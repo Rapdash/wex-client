@@ -1,5 +1,5 @@
 import React from "react";
-import { Header } from "./components/Header";
+import { Header } from "./shared/Header";
 import { BrowserRouter, Redirect } from "react-router-dom";
 
 export const App = () => (
