@@ -1,3 +1,5 @@
 import React from "react";
 
-export const ListingsPage = () => <div />
+export const ListingsPage = () => {
+  return <div />;
+};
