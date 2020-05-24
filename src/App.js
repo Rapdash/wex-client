@@ -1,11 +1,13 @@
 import React from "react";
+import { BrowserRouter, Redirect, Route } from "react-router-dom";
+
 import { Header } from "./shared/Header";
-import { BrowserRouter, Redirect } from "react-router-dom";
+import { ListingsPage } from "./pages/Listings";
 
 export const App = () => (
   <BrowserRouter>
     <Redirect from="/" to="/listings" exact />
     <Header />
-    <div />
+    <Route path="/listings" component={ListingsPage} />
   </BrowserRouter>
 );
