@@ -4,7 +4,7 @@ import { auth } from "firebase/app";
 import { useAuthState } from "react-firebase-hooks/auth";
 
 export const Header = () => {
-  const [user, loading, error] = useAuthState(auth());
+  const [user] = useAuthState(auth());
   const [expanded, setExpanded] = useState(false);
   return (
     <header>
