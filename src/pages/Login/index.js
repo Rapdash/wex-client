@@ -14,7 +14,6 @@ export const LoginPage = () => {
     auth()
       .signInWithEmailAndPassword(email, password)
       .catch((err) => {
-        console.log(err);
         setError(err.message);
       });
   };
