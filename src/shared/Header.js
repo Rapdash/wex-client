@@ -17,9 +17,6 @@ export const Header = () => {
             By The Water Agency, Inc.
           </h4>
         </div>
-        {!user && !loading && (
-          <div />
-        )}
         {user && (
           <>
             <div className="block lg:hidden">
