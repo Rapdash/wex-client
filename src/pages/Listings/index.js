@@ -6,5 +6,14 @@ export const ListingsPage = () => {
   const [listings, loading, error] = useCollectionDataOnce(
     firestore().collection("listings")
   );
-  return <main></main>;
+
+  if (error) {
+    return (
+      <main>
+        <h2 className="text-2xl text-center">{error.message}</h2>
+      </main>
+    );
+  }
+  return <main className="container">
+  </main>;
 };
