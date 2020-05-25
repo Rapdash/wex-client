@@ -14,6 +14,5 @@ export const ListingsPage = () => {
       </main>
     );
   }
-  return <main className="container">
-  </main>;
+  return <main className="container"></main>;
 };
